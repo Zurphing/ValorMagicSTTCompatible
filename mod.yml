@@ -1,0 +1,29 @@
+title: Valor Form Magic
+originalAuthor: Zurph
+game: kh2
+description: Allows Valor Form to use magic.
+assets:
+
+#Removes Disable Form Flag
+- name: 03system.bin
+  method: binarc
+  source:
+  - method: copy
+    name: cmd
+    source:
+    - name: cmd_0.list
+    type: list
+
+#Gives Valor Magic Animations
+- name: obj/P_EX100_BTLF.mset
+  method: copy
+  source:
+  - name: obj/P_EX100_BTLF.mset
+- name: obj/W_EX010_BTLF_L.mset
+  method: copy
+  source:
+  - name: obj/W_EX010_BTLF_L.mset
+- name: obj/W_EX010_BTLF_R.mset
+  method: copy
+  source:
+  - name: obj/W_EX010_BTLF_R.mset
